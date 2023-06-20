@@ -1,0 +1,303 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto 0px;
+}
+:root{
+        --colorAzul:#181D31;
+        --colorCrudo: #E6DDC4;
+        --colorSombra: #678983;
+}
+
+
+body{
+    background-color: var(--colorAzul)
+}
+
+#menu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#menuBoton{
+    padding-left: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+
+#rect1{
+    
+    animation-name: animacion1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+@keyframes animacion1{
+    0%{
+        opacity: 0;
+        transform: translate(0,-5px);
+    }
+    50% { 
+        opacity: 1;
+        transform: translate(0,5px);
+    }
+    100%{
+        opacity: 2;
+        transform: translate(0,0px);
+    }
+}
+
+#pol1{
+    
+    animation-name: animacion1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+
+#rect2{
+    
+    animation-name: animacion1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+@keyframes animacion1{
+    0%{
+        opacity: 0;
+        transform: translate(0,-5px);
+    }
+    50% { 
+        opacity: 1;
+        transform: translate(0,5px);
+    }
+    100%{
+        opacity: 2;
+        transform: translate(0,0px);
+    }
+}
+
+#pol2{
+    
+    animation-name: animacion1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+.botones{
+    color: var(--colorAzul);
+    background-color: var(--colorCrudo);
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px var(--colorSombra);
+    padding: 10px;
+    margin: 20px;
+}
+
+#conTitulo{
+    background-image: url("./imagenes/codigo.jpg");
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+#titulo1{
+    font-size: 60px;
+    color: #eeeeee;
+    text-shadow: 5px 5px black;
+    font-weight: bold;
+    display: block;
+}
+
+.titulos2{
+    font-size: 40px;
+    color: var(--colorSombra);
+    text-shadow: var(--colorAzul);
+    text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+#conPrincipal{
+    margin: 7%;
+    display: flex;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.contenedores{
+    background-color: var(--colorCrudo);
+    width: 300px;
+    height: 350px;
+    border: 6px solid var(--colorSombra);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fotoContenedores{
+    width: 100%;
+    margin: 0;
+}
+
+.parrafos{
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+.botones2{
+    color: var(--colorCrudo);
+    background-color: var(--colorAzul);
+    border-radius: 8px;
+    box-shadow: 3px 3px var(--colorSombra);
+    padding: 10px;
+    text-decoration: none;
+}
+
+#pieDePag{
+    background-color: var(--colorSombra);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--colorAzul);
+}
+
+#fotoContenedor3{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#textoFinal1{
+    font-weight: bolder;
+    list-style-type: none;  
+    text-align: center;
+}
+
+.tarjetaHistoria{
+    padding: 70px;
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--colorSombra);
+    text-align: center;
+    text-shadow: 3px 3px black;
+    margin: auto;
+}
+
+.textosPestaña2{
+    font-size: 20px;
+    display:block;
+    color: var(--colorCrudo);
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+#contenedorVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px;
+}
+
+#contenedorVideo2{
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+}
+
+.botonesVideo{
+    width: 100px;
+    height: 40px;
+    border-color: var(--colorAzul);
+    border-radius: 6px;
+    box-shadow: 3px 3px var(--colorSombra);
+    padding: 15px;
+    margin: 10px;
+}
+
+#barraVideo{
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: left;
+    gap: 10 px;
+    border-radius: 8px;
+    padding: 2px 5px;
+}
+
+#duracion{
+    color: var(--colorCrudo);
+    margin-left: 55%;
+}
+
+/* No pude resolver que la foto que arrastramos a la .cajaVacia, se ubiquen de igual manera que el contenedor, queda sobrando una parte y además no se tapa el párrafo de adentro 
+Tengo que usar set y get Data? */
+
+#juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--colorAzul);
+}
+
+#tituloJuego{
+    margin-top: 10%;
+    display: block;
+}
+
+#rompecabezas{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.tituloCont{
+    color: var(--colorCrudo);
+}
+
+.cajaVacia{
+    border: 3px solid black;
+    background-color: grey;
+    width: 300px;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contFotos{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 3%;
+}
+
+#drag1, #drag2, #drag3{
+    width: 300px;
+    height: 505px;
+}
+
+#botonReinicio{
+    width: 300px;
+    height: 50px;
+    border-color: var(--colorAzul);
+    border-radius: 6px;
+    box-shadow: 3px 3px var(--colorSombra);
+    padding: 15px;
+    margin: 5%;
+}

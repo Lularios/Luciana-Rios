@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestaña Juguemos</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <nav id="menu">
+       
+        <a href="./InicioProyectoFinal.html">
+
+        <svg width="200" height="100">
+            
+            <rect id="rect1" x="70" y="5" width="80" height="55" stroke="2" fill="#E6DDC4" rx="4"  ></rect>
+
+            <polygon id="pol1" points="240 140, 140 64, 80 64, 10 120" fill="#E6DDC4" ></polygon>
+
+            <rect id="rect2" x="78" y="13" width="65" height="40" stroke="2" fill="#45415c" rx="4"  ></rect>
+
+            <polygon id="pol2" points="164 93, 137 72, 82 72, 56 93" fill="#45415c" ></polygon>
+        </svg>
+        </a>
+
+        <div id="menuBoton">
+            <a class="botones" href="./Pestaña2ProyectoFinal.html">HISTORIA</a>
+            <a class="botones" href="./Pestaña3ProyectoFinal.html">JUGUEMOS</a>
+        </div>
+
+    </nav>
+    
+    <header id="conTitulo">
+        <h1 id="titulo1">JUGUEMOS UN POCO</h1>
+    </header>
+
+<article id="juego">
+    <h2 id="tituloJuego">Armemos el rompecabezas y veamos que imagen es...</h2>
+    <section id="rompecabezas">
+        <div id="drop1" class="cajaVacia" onmouseover="cambiaColor()" onmouseout="vuelveColor()">
+            <p class="tituloCont">Arrastre y suelte la imagen aquí</p>
+        </div>         
+        <div id="drop2" class="cajaVacia" onmouseover="cambiaColor2()" onmouseout="vuelveColor2()">
+            <p class="tituloCont">Arrastre y suelte la imagen aquí</p>
+        </div>
+        <div id="drop3" class="cajaVacia" onmouseover="cambiaColor3()" onmouseout="vuelveColor3()">
+            <p class="tituloCont">Arrastre y suelte la imagen aquí</p>
+        </div>
+    </section>
+
+    <section id="contFotos">
+        <div id="contenedorFotos1">
+            <img id="drag1" src="./imagenes/rompe2.png" alt="Foto para armar rompecabezas n°1" >
+        </div>    
+        <div id="contenedorFotos2">    
+            <img id="drag2" src="./imagenes/Rompe1.png" alt="Foto para armar rompecabezas n°2">
+        </div>
+        <div id="contenedorFotos3">
+            <img id="drag3" src="./imagenes/Rompe3.png" alt="Foto para armar rompecabezas n°3">
+        </div>
+    </section>
+
+    <button id="botonReinicio" onclick="reiniciar()">Reiniciar</button>
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
